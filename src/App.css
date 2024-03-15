@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body, html {
+  width: 100%;
+  height: 100%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 2%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 20px;
+  background-color: #fff; /* Or the background color of your choice */
 }
 
-.App-link {
-  color: #61dafb;
+.App-header-content {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%; /* Ensures the content container fills the header */
+  max-width: 1200px; /* Adjust this to the maximum width you want for your content */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+img {
+
+  margin-right: 3%;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+/* Nav.css */
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Adjust the space between items as needed */
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.navigation a {
+  color: #333333; /* Replace with actual color from the design */
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #FAC14E; /* Hover color */
 }
